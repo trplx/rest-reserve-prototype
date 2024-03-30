@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Авторизация
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="card">
+
+        <ion-input 
+            mode="md"
+            label="Номер телефона" 
+            label-placement="floating"
+            type="tel"
+            placeholder="Введите номер толефона" 
+            fill="solid"
+            [clearInput]="true"
+            >
+        </ion-input>
+        <br/>
+        <ion-input 
+            mode="md"
+            label="Пароль" 
+            label-placement="floating"
+            type="password"
+            placeholder="Введите пароль" 
+            fill="solid"
+            [clearInput]="true"
+            >
+        </ion-input>
+        <br/>
+        <ion-button shape="round" expand="block" fill="outline" (click)="login()">
+            Войти
+            <ion-icon slot="end" name="log-in-outline"></ion-icon>
+        </ion-button>
+    </ion-card>          
+</ion-content>
